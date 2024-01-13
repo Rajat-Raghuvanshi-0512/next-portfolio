@@ -1,6 +1,6 @@
 // Images
 import LogoImg from '@/assets/logo.webp';
-import MyImg from '@/assets/me.jpg';
+import MyImg from '@/assets/me.webp';
 import CssLogo from '@/assets/tech/css.webp';
 import DockerLogo from '@/assets/tech/docker.webp';
 import FigmaLogo from '@/assets/tech/figma.webp';
