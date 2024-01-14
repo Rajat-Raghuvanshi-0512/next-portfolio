@@ -37,7 +37,7 @@ const MainHeading = ({ title, subTitle }: IMainHeadingProps) => {
           duration: 1,
           transformOrigin: 'left top',
           stagger: {
-            each: 0.05,
+            each: 0.1,
             from: 'random',
           },
         }

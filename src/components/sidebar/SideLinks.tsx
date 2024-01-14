@@ -27,9 +27,9 @@ const SingleLink = ({ name, path, Icon }: ISidebarItem) => {
     <li>
       <Link
         href={path}
-        className={`flex items-center gap-3 text-xl origin-right p-3 rounded-l-3xl cursor-pointer side-link ${
+        className={`flex items-center gap-3 xl:text-xl origin-right p-3 rounded-l-3xl cursor-pointer side-link ${
           pathname === path
-            ? 'bg-[#1F1E1F] active scale-95'
+            ? 'bg-[#14121b] active scale-95'
             : 'hover:scale-95 duration-500'
         }`}
       >

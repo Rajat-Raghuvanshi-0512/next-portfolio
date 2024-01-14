@@ -1,12 +1,14 @@
 'use client';
-import { styles } from '@/lib/styles';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Poppins } from 'next/font/google';
 import Image from 'next/image';
-import { MyImg, logos } from '@/lib/constants';
+import { MyImg } from '@/lib/constants';
 import { Github, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 import MainHeading from '@/components/heading/MainHeading';
+import Technologies from '@/components/home/Technologies';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const toRotate = [
   'Web Developer',
@@ -49,14 +51,32 @@ const App = () => {
     }
   }, [text, count, isDeleting]);
 
+  const ref = useRef(null);
+  useGSAP(
+    () => {
+      // gsap code here...
+      gsap.timeline().fromTo(
+        '.fadeIn',
+        { x: 100, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 2,
+        }
+      );
+    },
+    { scope: ref }
+  );
+
   useEffect(() => {
     const tickInterval = setInterval(() => {
       tick();
     }, delay);
     return () => clearInterval(tickInterval);
   }, [text, tick, delay]);
+
   return (
-    <section className="mx-10">
+    <section className="mx-10 overflow-hidden" ref={ref}>
       <MainHeading title="introduction" subTitle="overview" />
       <div className={` grid grid-cols-5 gap-5 md:gap-10 lg:gap-12`}>
         <div className="floating-container w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[300px] xl:h-[300px] overflow-clip ml-10 mt-14 col-span-2">
@@ -70,7 +90,7 @@ const App = () => {
         </div>
         <div className="col-span-3">
           <h1
-            className={`text-[clamp(3rem,8vmin,10rem)] lg:leading-[80px] text-white ${poppinsSemiBold.className}`}
+            className={`text-[clamp(1rem,7vmin,6rem)] lg:leading-[80px] text-white opacity-0 fadeIn ${poppinsSemiBold.className}`}
           >
             <span className="block sm:inline">
               👋Hi, I&apos;m <span className="text-[#01C1CF]">Rajat</span>
@@ -84,7 +104,7 @@ const App = () => {
             </a>
           </h1>
           <p
-            className={`${styles.heroSubText} mt-2 lg:-mt-2 pl-3 sm:pl-10 text-white-100 font-medium`}
+            className={`text-[clamp(1rem,4vmin,5rem)] opacity-0 text-slate-200 mt-2 lg:-mt-2 pl-3 sm:pl-10 text-white-100 font-medium fadeIn`}
           >
             🚀 I am&nbsp;
             <span className="text-[#01C1CF] font-bold">
@@ -94,11 +114,12 @@ const App = () => {
               </span>
             </span>
           </p>
-          <div className="info flex gap-3 items-end justify-end m-10">
+          <div className="info flex gap-3 items-end justify-end m-10 fadeIn opacity-0">
             <Link
               href="https://github.com/Rajat-Raghuvanshi-0512"
               target="_blank"
               rel="noopener noreferer"
+              className="hover:drop-shadow-white duration-300 hover:scale-110"
             >
               <Github color="#fff" />
             </Link>
@@ -106,25 +127,12 @@ const App = () => {
               href="https://www.linkedin.com/in/rajat-raghuvanshi-315593201/"
               target="_blank"
               rel="noopener noreferer"
+              className="hover:drop-shadow-white duration-300 hover:scale-110"
             >
               <Linkedin color="#fff" />
             </Link>
           </div>
-          <div className="tech text-white font-bold">
-            <h4>Technologies</h4>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  xl:grid-cols-6 gap-5 my-5">
-              {logos.map((logo) => (
-                <Image
-                  key={logo.id}
-                  src={logo.src}
-                  alt="logo"
-                  width={40}
-                  height={40}
-                  className="hover:drop-shadow-white duration-300"
-                />
-              ))}
-            </div>
-          </div>
+          <Technologies />
         </div>
       </div>
     </section>

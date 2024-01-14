@@ -33,8 +33,8 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-    --primary-bg: #1f1e1f;
-    --secondary-bg: #161617;
+    --primary-bg: #14121b;
+    --secondary-bg: #1c1a22;
   }
 
   .dark {
@@ -111,10 +111,19 @@ body {
 }
 
 .floating-container {
-  animation: morph 8s ease-in-out infinite;
+  animation: morph 8s ease-in-out infinite, fade-in 2s ease-in-out forwards;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   transition: all 1s ease-in-out;
   border: 3px solid #02959f;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes morph {
@@ -128,5 +137,55 @@ body {
 
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.pulse-shadow {
+  animation: pulse-shadow 3s ease-in-out infinite alternate;
+}
+.pulse-shadow:nth-child(1) {
+  animation-delay: 0s;
+}
+.pulse-shadow:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.pulse-shadow:nth-child(3) {
+  animation-delay: 1s;
+}
+.pulse-shadow:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.pulse-shadow:nth-child(5) {
+  animation-delay: 2s;
+}
+.pulse-shadow:nth-child(6) {
+  animation-delay: 2.5s;
+}
+.pulse-shadow:nth-child(7) {
+  animation-delay: 0s;
+}
+.pulse-shadow:nth-child(8) {
+  animation-delay: 0.5s;
+}
+.pulse-shadow:nth-child(9) {
+  animation-delay: 1s;
+}
+.pulse-shadow:nth-child(10) {
+  animation-delay: 1.5s;
+}
+.pulse-shadow:nth-child(11) {
+  animation-delay: 2s;
+}
+.pulse-shadow:nth-child(12) {
+  animation-delay: 2.5s;
+}
+
+@keyframes pulse-shadow {
+  from {
+    transform: translate(10px, 25px);
+  }
+  to {
+    filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
+    transform: translate(0, 0);
   }
 }
