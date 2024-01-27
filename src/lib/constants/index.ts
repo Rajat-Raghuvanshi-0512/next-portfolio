@@ -15,6 +15,10 @@ import TailwindLogo from '@/assets/tech/tailwind.webp';
 import TypescriptLogo from '@/assets/tech/typescript.webp';
 import NextjsLogo from '@/assets/tech/nextjs.webp';
 import { Poppins } from 'next/font/google';
+import Backend from '@/assets/about/backend.png';
+import Frontend from '@/assets/about/frontend.png';
+import Blockchain from '@/assets/about/creator.png';
+import Native from '@/assets/about/native.png';
 
 const logos = [
   {
@@ -64,6 +68,25 @@ const logos = [
   {
     id: 2,
     src: DockerLogo,
+  },
+];
+
+export const domains = [
+  {
+    name: 'Frontend development',
+    image: Frontend,
+  },
+  {
+    name: 'Backend development',
+    image: Backend,
+  },
+  {
+    name: 'React Native development',
+    image: Native,
+  },
+  {
+    name: 'Blockchain development',
+    image: Blockchain,
   },
 ];
 export const poppinsBold = Poppins({

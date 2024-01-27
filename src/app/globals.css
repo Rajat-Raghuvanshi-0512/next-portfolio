@@ -76,6 +76,19 @@
     @apply bg-background text-foreground;
   }
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-bg);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-bg);
+}
 body {
   background-color: var(--primary-bg);
   display: flex;
@@ -188,4 +201,14 @@ body {
     filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.5));
     transform: translate(0, 0);
   }
+}
+
+.green-pink-gradient {
+  background: '#00cea8';
+  background: linear-gradient(90.13deg, #42c2cf 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #42c2cf 1.9%, #bf61ff 97.5%);
+}
+
+.bg {
+  background-color: rgb(21 16 48 / 0.9);
 }

@@ -9,20 +9,17 @@ const Technologies = () => {
   const ref = useRef(null);
   useGSAP(
     () => {
-      // gsap code here...
       gsap.timeline().fromTo(
         '.name-animation',
-        { y: 50, opacity: 0, rotate: -60 },
+        { opacity: 0 },
         {
-          y: 0,
           opacity: 1,
-          rotate: 0,
           stagger: {
             each: 0.2,
             from: 'start',
           },
         }
-      ); // <-- automatically reverted
+      );
     },
     { scope: ref }
   );

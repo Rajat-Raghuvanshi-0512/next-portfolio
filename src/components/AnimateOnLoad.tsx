@@ -10,6 +10,7 @@ interface IAnimateOnLoadProps extends React.PropsWithChildren {
   fromBottom?: boolean;
   duration?: number;
   offset?: number;
+  delay?: number;
 }
 
 const AnimateOnLoad = ({
@@ -20,6 +21,7 @@ const AnimateOnLoad = ({
   fromBottom,
   duration = 1,
   offset = 1,
+  delay = 0,
 }: IAnimateOnLoadProps) => {
   const container = useRef<HTMLDivElement>(null);
   useGSAP(
@@ -36,6 +38,7 @@ const AnimateOnLoad = ({
           y: 0,
           opacity: 1,
           duration,
+          delay,
         }
       );
     },
