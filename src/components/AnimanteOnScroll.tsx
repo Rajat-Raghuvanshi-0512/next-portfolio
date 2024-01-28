@@ -14,35 +14,19 @@ interface IAnimateOnLoadProps extends React.PropsWithChildren {
   className?: string;
 }
 
-const AnimateOnLoad = ({
-  children,
-  fromRight,
-  fromTop,
-  fromLeft,
-  fromBottom,
-  duration = 1,
-  offset = 1,
-  delay = 0,
-  className,
-}: IAnimateOnLoadProps) => {
+const AnimateOnScroll = ({ children, className }: IAnimateOnLoadProps) => {
   const container = useRef<HTMLDivElement>(null);
   useGSAP(
     () => {
-      gsap.timeline().fromTo(
-        '.slide-in',
-        {
-          x: fromRight ? 100 * offset : fromLeft ? -100 * offset : 0,
-          y: fromTop ? -100 * offset : fromBottom ? 100 * offset : 0,
-          opacity: 0,
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: '#vote',
+          start: '20% 75%',
+          onEnter: () => {
+            gsap.to('.name', { opacity: 0 });
+          },
         },
-        {
-          x: 0,
-          y: 0,
-          opacity: 1,
-          duration,
-          delay,
-        }
-      );
+      });
     },
     { scope: container }
   );
@@ -53,4 +37,4 @@ const AnimateOnLoad = ({
   );
 };
 
-export default AnimateOnLoad;
+export default AnimateOnScroll;

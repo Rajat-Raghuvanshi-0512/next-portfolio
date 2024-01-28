@@ -19,7 +19,7 @@ const MainHeading = ({ title, subTitle }: IMainHeadingProps) => {
         key={index}
         className={`name-animation name-animation-${key}-index inline-block opacity-0 `}
       >
-        {letter}
+        {letter === ' ' ? <span>&nbsp;</span> : letter}
       </span>
     ));
   };

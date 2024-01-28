@@ -6,7 +6,7 @@ import React from 'react';
 
 const page = () => {
   return (
-    <section className="mx-10 overflow-hidden pb-10 min-h-screen">
+    <section className="mx-10 overflow-hidden min-h-screen">
       <MainHeading title="introduction" subTitle="detail" />
       <AnimateOnLoad fromRight duration={2} offset={1.5}>
         <p className="text-white font-mono text-justify mt-5 slide-in opacity-0 md:text-sm lg:text-base 2xl:text-xl">

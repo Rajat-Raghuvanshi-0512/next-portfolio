@@ -19,6 +19,12 @@ import Backend from '@/assets/about/backend.png';
 import Frontend from '@/assets/about/frontend.png';
 import Blockchain from '@/assets/about/creator.png';
 import Native from '@/assets/about/native.png';
+import pixy from '@/assets/company/pixy.webp';
+import avada from '@/assets/company/avada.png';
+import duckcart from '@/assets/company/duckcart.png';
+import qwings from '@/assets/company/qwings.png';
+import skillvertex from '@/assets/company/skillvertex.png';
+import hcode from '@/assets/company/hcode.png';
 
 const logos = [
   {
@@ -89,10 +95,89 @@ export const domains = [
     image: Blockchain,
   },
 ];
+
+export const experiences = [
+  {
+    title: 'Associate Software Developer',
+    company_name: 'Hcode Technologies',
+    icon: hcode,
+    iconBg: '#E6DEDD',
+    date: 'Dec 2023 - Present',
+    points: [
+      'Currently maintaining a native mobile application with over 200,000 users',
+      'Majorly working on bug fixes and code optimisations',
+      "Resolving user's query in minimal time",
+    ],
+  },
+  {
+    title: 'Fullstack Developer',
+    company_name: 'Pixy Square',
+    icon: pixy,
+    iconBg: '#E6DEDD',
+    date: 'May 2023 - Nov 2023',
+    points: [
+      'Fulfilling the demands of clients of new Startup applications',
+      'Developing figma designs into responsive web applications',
+      'Ensuring cross-browser compatibility.',
+      'Using various optimization and SEO enhancing techniques',
+    ],
+  },
+  {
+    title: 'NodeJs Developer',
+    company_name: 'Duckcart',
+    icon: duckcart,
+    iconBg: '#E6DEDD',
+    date: 'November 2022 - May 2023',
+    points: [
+      'Managing the backend of a new Startup application, creating new apis, adding new features etc.',
+      'Managing a team of Interns.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+      'Keeping a track of changes and new features added by other interns',
+    ],
+  },
+
+  {
+    title: 'Frontend Developer Intern',
+    company_name: 'Qwings',
+    icon: qwings,
+    iconBg: '#E6DEDD',
+    date: 'March 2022 - July 2022',
+    points: [
+      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Participating in code reviews and providing constructive feedback to other developers.',
+    ],
+  },
+  {
+    title: 'Web Developer Intern',
+    company_name: 'Avada',
+    icon: avada,
+    iconBg: '#E6DEDD',
+    date: 'March 2021 - August 2021',
+    points: [
+      'Worked as a senior web developer, lead a team of 8 people, maintained the main website of the company',
+      'Taught colleagues good code practices and optimization techniques.',
+    ],
+  },
+  {
+    title: 'MERN Stack Developer Intern',
+    company_name: 'Skill Vertex',
+    icon: skillvertex,
+    iconBg: '#32FFD4',
+    date: 'October 2020 - December 2020',
+    points: [
+      'Developing and maintaining web applications using MERN stack.',
+      'Implemented previous learning, created and maintained several apps i.e E - commerce and Food delivery.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+    ],
+  },
+];
+
 export const poppinsBold = Poppins({
   subsets: ['latin'],
   weight: '800',
 });
+
 export {
   LogoImg,
   MyImg,

@@ -25,7 +25,7 @@ export default function RootLayout({
       <meta name="view-transition" content="same-origin" />
       <body className={font.className}>
         <Sidebar />
-        <main className="p-2 w-full">{children}</main>
+        <main className="w-full">{children}</main>
       </body>
     </html>
   );

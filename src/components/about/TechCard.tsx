@@ -8,8 +8,8 @@ type TechCardProps = {
 
 const TechCard = ({ name, image }: TechCardProps) => {
   return (
-    <div className="green-pink-gradient rounded-2xl p-1 w-[180px] xl:w-[200px] 2xl:w-[250px] h-full slide-in">
-      <div className="bg rounded-xl p-2 flex flex-col items-center h-full text-white gap-5 py-10">
+    <div className="green-pink-gradient rounded-3xl p-1 w-[180px] xl:w-[200px] 2xl:w-[250px] h-full slide-in">
+      <div className="bg rounded-3xl p-2 flex flex-col items-center h-full text-white gap-5 py-10">
         <Image
           src={image}
           alt="xl"
