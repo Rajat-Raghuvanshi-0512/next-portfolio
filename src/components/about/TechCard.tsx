@@ -1,10 +1,6 @@
-import Image, { StaticImageData } from 'next/image';
+import { TechCardProps } from '@/lib/types';
+import Image from 'next/image';
 import React from 'react';
-
-type TechCardProps = {
-  name: string;
-  image: StaticImageData;
-};
 
 const TechCard = ({ name, image }: TechCardProps) => {
   return (

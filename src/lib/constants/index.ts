@@ -178,6 +178,222 @@ export const poppinsBold = Poppins({
   weight: '800',
 });
 
+export const projectsList = [
+  {
+    topic: 'MERN stack',
+    projects: [
+      {
+        name: 'Shop Buddy',
+        description:
+          'Shop Buddy is an attempt to serve the people of India with unique designs on apparels. E-commerce is revolutionising the way we all shop in India.',
+        tags: [
+          {
+            name: 'react',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'mongodb',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'nodejs',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image:
+          'https://res.cloudinary.com/rajat0512/video/upload/v1706545900/portfolio/videos/y8lypwd4ti8fod414uav.mp4',
+        source_code_link:
+          'https://github.com/Rajat-Raghuvanshi-0512/MERN-Ecommerce',
+        live_url: 'https://shop-buddy.onrender.com',
+      },
+      {
+        name: 'Voyage Tours and Travels',
+        description:
+          "With Voyage, businesses may save money and offer convenience to their clients. Also, 'community chat' has been added for the user to find a travel companion.",
+        tags: [
+          {
+            name: 'reactjs',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'heroku',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'nodejs',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image:
+          'https://res.cloudinary.com/rajat0512/video/upload/v1706545887/portfolio/videos/frelfl7bowmpf7jvseli.mp4',
+        source_code_link:
+          'https://github.com/Rajat-Raghuvanshi-0512/voyage-tours-and-travels',
+        live_url: 'https://voyage-tours.netlify.app/',
+      },
+    ],
+  },
+
+  {
+    topic: 'Nextjs',
+    projects: [
+      {
+        name: "Timmy's mowing",
+        description:
+          'Web 3.0 has the potential to change the internet as we know it, forever. This is my first blockchain cryptocurrency app.',
+        tags: [
+          {
+            name: 'nextjs',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'tailwind-css',
+            color: 'green-text-gradient',
+          },
+        ],
+        image:
+          'https://res.cloudinary.com/rajat0512/video/upload/v1706549733/portfolio/videos/eg8zd8aylgo6opcwrsmu.mp4',
+        source_code_link:
+          'https://github.com/Rajat-Raghuvanshi-0512/web3.0-blockchain-app',
+        live_url: 'https://timmysmowing.au/',
+      },
+      {
+        name: 'Pare India',
+        description:
+          'Web 3.0 has the potential to change the internet as we know it, forever. This is my first blockchain cryptocurrency app.',
+        tags: [
+          {
+            name: 'next js',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'tailwind css',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'hostinger',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image:
+          'https://res.cloudinary.com/rajat0512/video/upload/v1706549818/portfolio/videos/asvvbgux8c5fd1kyvvfa.mp4',
+        source_code_link:
+          'https://github.com/Rajat-Raghuvanshi-0512/web3.0-blockchain-app',
+        live_url: 'https://pareindia.com/',
+      },
+    ],
+  },
+  {
+    topic: 'Reactjs',
+    projects: [
+      {
+        name: "Mother's Kitchen",
+        description:
+          'Web 3.0 has the potential to change the internet as we know it, forever. This is my first blockchain cryptocurrency app.',
+        tags: [
+          {
+            name: 'react',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'tailwind-css',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image:
+          'https://res.cloudinary.com/rajat0512/video/upload/v1706549833/portfolio/videos/dorv7lixzo3rwgtxe1fu.mp4',
+        source_code_link:
+          'https://github.com/Rajat-Raghuvanshi-0512/web3.0-blockchain-app',
+        live_url: 'https://motherskitchen.co.in/',
+      },
+      {
+        name: 'Chat App',
+        description:
+          'Web 3.0 has the potential to change the internet as we know it, forever. This is my first blockchain cryptocurrency app.',
+        tags: [
+          {
+            name: 'react',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'firebase',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'AWS lambda',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image:
+          'https://res.cloudinary.com/rajat0512/video/upload/v1706545886/portfolio/videos/pnntywpae2dkef0xbo5e.mp4',
+        source_code_link:
+          'https://github.com/Rajat-Raghuvanshi-0512/web3.0-blockchain-app',
+        live_url: 'https://chat-app-c8964.web.app/',
+      },
+    ],
+  },
+  {
+    topic: 'Web 3.0',
+    projects: [
+      {
+        name: 'Krypt',
+        description:
+          'Web 3.0 has the potential to change the internet as we know it, forever. This is my first blockchain cryptocurrency app.',
+        tags: [
+          {
+            name: 'react',
+            color: 'blue-text-gradient',
+          },
+          {
+            name: 'solidity',
+            color: 'green-text-gradient',
+          },
+          {
+            name: 'hardhat',
+            color: 'pink-text-gradient',
+          },
+        ],
+        image:
+          'https://res.cloudinary.com/rajat0512/video/upload/v1706545884/portfolio/videos/cmtxwcqqeenyzpjct9al.mp4',
+        source_code_link:
+          'https://github.com/Rajat-Raghuvanshi-0512/web3.0-blockchain-app',
+        live_url: 'https://krypt-georli.netlify.app/',
+      },
+    ],
+  },
+];
+
+// lc - https://res.cloudinary.com/rajat0512/video/upload/v1706549744/portfolio/videos/c7dfpxuemsbalizocbf6.mp4
+
+export const testimonials = [
+  {
+    testimonial:
+      'I thought it was impossible to make a website as beautiful as our product, but Rajat proved me wrong.',
+    name: 'Ankit',
+    designation: 'Team Leader',
+    company: 'Qwings',
+    image:
+      'https://res.cloudinary.com/rajat0512/image/upload/v1642447946/E-commerce/avatar_gehm7u.jpg',
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rajat does.",
+    name: 'Abhijit',
+    designation: 'HR',
+    company: 'Skill Vertex',
+    image:
+      'https://res.cloudinary.com/rajat0512/image/upload/v1642447946/E-commerce/avatar_gehm7u.jpg',
+  },
+  {
+    testimonial:
+      "After Rajat optimized our website, our traffic increased by 30%. We can't thank you enough!",
+    name: 'Anubhav',
+    designation: 'Project Manager',
+    company: 'Avada',
+    image:
+      'https://res.cloudinary.com/rajat0512/image/upload/v1642447946/E-commerce/avatar_gehm7u.jpg',
+  },
+];
+
 export {
   LogoImg,
   MyImg,

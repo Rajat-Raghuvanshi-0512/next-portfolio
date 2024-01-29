@@ -1,18 +1,17 @@
 'use client';
-import AnimateOnLoad from '@/components/AnimateOnLoad';
 import MainHeading from '@/components/heading/MainHeading';
 import { experiences } from '@/lib/constants';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 const WorkPage = () => {
   useEffect(() => {
     const boxes = document.querySelectorAll('.card');
     let anim: gsap.core.Tween;
-    boxes.forEach((box, i) => {
+    boxes.forEach((box) => {
       anim = gsap.fromTo(
         box,
         { autoAlpha: 0, y: 70 },

@@ -1,40 +1,32 @@
 'use client';
-import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import React, { useRef } from 'react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, { useEffect } from 'react';
 
-interface IAnimateOnLoadProps extends React.PropsWithChildren {
-  fromRight?: boolean;
-  fromTop?: boolean;
-  fromLeft?: boolean;
-  fromBottom?: boolean;
-  duration?: number;
-  offset?: number;
-  delay?: number;
-  className?: string;
-}
-
-const AnimateOnScroll = ({ children, className }: IAnimateOnLoadProps) => {
-  const container = useRef<HTMLDivElement>(null);
-  useGSAP(
-    () => {
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: '#vote',
-          start: '20% 75%',
-          onEnter: () => {
-            gsap.to('.name', { opacity: 0 });
-          },
-        },
+interface IAnimateOnLoadProps extends React.PropsWithChildren {}
+gsap.registerPlugin(ScrollTrigger);
+const AnimateOnScroll = ({ children }: IAnimateOnLoadProps) => {
+  useEffect(() => {
+    const boxes = document.querySelectorAll('.card');
+    let anim: gsap.core.Tween;
+    boxes.forEach((box) => {
+      anim = gsap.fromTo(
+        box,
+        { autoAlpha: 0, y: 90 },
+        { duration: 1.7, autoAlpha: 1, y: 0 }
+      );
+      ScrollTrigger.create({
+        trigger: box,
+        animation: anim,
+        toggleActions: 'play none none none',
+        once: true,
       });
-    },
-    { scope: container }
-  );
-  return (
-    <div className={className} ref={container}>
-      {children}
-    </div>
-  );
+    });
+    return () => {
+      anim?.kill();
+    };
+  }, []);
+  return children;
 };
 
 export default AnimateOnScroll;
