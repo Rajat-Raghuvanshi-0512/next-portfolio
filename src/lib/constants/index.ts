@@ -366,7 +366,16 @@ export const projectsList = [
 
 export const testimonials = [
   {
-    testimonial:
+    summary:
+      "After Rajat optimized our website, our traffic increased by 30%. We can't thank you enough!",
+    name: 'Kamal Pratap',
+    designation: 'Project Manager',
+    company: 'Duckcart',
+    image:
+      'https://res.cloudinary.com/rajat0512/image/upload/v1642447946/E-commerce/avatar_gehm7u.jpg',
+  },
+  {
+    summary:
       'I thought it was impossible to make a website as beautiful as our product, but Rajat proved me wrong.',
     name: 'Ankit',
     designation: 'Team Leader',
@@ -375,20 +384,11 @@ export const testimonials = [
       'https://res.cloudinary.com/rajat0512/image/upload/v1642447946/E-commerce/avatar_gehm7u.jpg',
   },
   {
-    testimonial:
+    summary:
       "I've never met a web developer who truly cares about their clients' success like Rajat does.",
     name: 'Abhijit',
     designation: 'HR',
     company: 'Skill Vertex',
-    image:
-      'https://res.cloudinary.com/rajat0512/image/upload/v1642447946/E-commerce/avatar_gehm7u.jpg',
-  },
-  {
-    testimonial:
-      "After Rajat optimized our website, our traffic increased by 30%. We can't thank you enough!",
-    name: 'Anubhav',
-    designation: 'Project Manager',
-    company: 'Avada',
     image:
       'https://res.cloudinary.com/rajat0512/image/upload/v1642447946/E-commerce/avatar_gehm7u.jpg',
   },

@@ -23,3 +23,12 @@ export type ProjectCardType = {
   source_code_link: string;
   live_url: string;
 };
+
+export type TestimonialCardProps = {
+  name: string;
+  designation: string;
+  company: string;
+  image: StaticImageData | string;
+  summary: string;
+  idx: number;
+};
