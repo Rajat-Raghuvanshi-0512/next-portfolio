@@ -367,6 +367,15 @@ export const projectsList = [
 export const testimonials = [
   {
     summary:
+      'Rajat developed our website exactly like we wanted it, and even better to be honest. His web development expertise has given us great digital products!',
+    name: 'Lokesh Chauhan',
+    designation: 'Founder',
+    company: 'Pixy Square',
+    image:
+      'https://res.cloudinary.com/rajat0512/image/upload/v1706977896/portfolio/feedbacks/ixejunnb4uyrzilmmxqd.jpg',
+  },
+  {
+    summary:
       "After Rajat optimized our website, our traffic increased by 30%. We can't thank you enough!",
     name: 'Kamal Pratap',
     designation: 'Project Manager',
@@ -374,18 +383,10 @@ export const testimonials = [
     image:
       'https://res.cloudinary.com/rajat0512/image/upload/v1642447946/E-commerce/avatar_gehm7u.jpg',
   },
+
   {
     summary:
-      'I thought it was impossible to make a website as beautiful as our product, but Rajat proved me wrong.',
-    name: 'Ankit',
-    designation: 'Team Leader',
-    company: 'Qwings',
-    image:
-      'https://res.cloudinary.com/rajat0512/image/upload/v1642447946/E-commerce/avatar_gehm7u.jpg',
-  },
-  {
-    summary:
-      "I've never met a web developer who truly cares about their clients' success like Rajat does.",
+      "I've never met a web developer who truly cares about their client's success like Rajat does. Truely a great Person.",
     name: 'Abhijit',
     designation: 'HR',
     company: 'Skill Vertex',
