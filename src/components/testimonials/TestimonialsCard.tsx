@@ -30,7 +30,7 @@ const TestimonialsCard = ({
           alt="avatar"
           width={180}
           height={180}
-          className="rounded-full slide-in w-[100px] h-[100px] object-cover"
+          className="rounded-full slide-in w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[180px] lg:h-[180px] object-cover"
         />
       </AnimateOnLoad>
       <AnimateOnLoad
