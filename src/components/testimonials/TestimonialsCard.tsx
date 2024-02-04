@@ -13,9 +13,9 @@ const TestimonialsCard = ({
 }: TestimonialCardProps) => {
   return (
     <div
-      className={`flex gap-5 mx-5 bg-tertiary p-5 lg:p-12 shadow-white/10 shadow-inner rounded-tl-[100px] rounded-tr-[70px] rounded-br-[50px] ${idx % 2 === 0
-        ? 'flex-row rounded-tl-[100px] rounded-tr-[70px] rounded-br-[50px]'
-        : 'flex-row-reverse rounded-tr-[100px] rounded-tl-[70px] rounded-bl-[50px] rounded-br-none'
+      className={`flex flex-col md:flex-row gap-5 md:mx-5 bg-tertiary p-5 lg:p-12 shadow-white/10 shadow-inner rounded-xl md:rounded-tl-[100px] md:rounded-tr-[70px] md:rounded-br-[50px] ${idx % 2 === 0
+        ? 'flex-row md:rounded-tl-[100px] md:rounded-tr-[70px] md:rounded-br-[50px]'
+        : 'flex-row-reverse md:rounded-tr-[100px] md:rounded-tl-[70px] md:rounded-bl-[50px] md:rounded-br-none'
         }`}
     >
       <AnimateOnLoad
@@ -30,7 +30,7 @@ const TestimonialsCard = ({
           alt="avatar"
           width={180}
           height={180}
-          className="rounded-full slide-in"
+          className="rounded-full slide-in w-[100px] h-[100px] object-cover"
         />
       </AnimateOnLoad>
       <AnimateOnLoad
@@ -41,10 +41,10 @@ const TestimonialsCard = ({
         className="flex-[1.3] mx-5"
       >
         <div className="relative text-slate-300 slide-in">
-          <span className="text-6xl font-bold -left-10 -top-2 absolute">
+          <span className="text-4xl lg:text-6xl font-bold -left-6 lg:-left-10 -top-2 absolute">
             &ldquo;
           </span>
-          <p className="text-3xl text-justify font-sans font-semibold leading-snug">
+          <p className="text-lg md:text-xl lg:text-3xl text-justify font-sans font-semibold leading-snug">
             {summary}
           </p>
         </div>

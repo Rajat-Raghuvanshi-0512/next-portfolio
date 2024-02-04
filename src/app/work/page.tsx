@@ -29,14 +29,14 @@ const WorkPage = () => {
     };
   }, []);
   return (
-    <section className="mx-10 overflow-hidden min-h-screen text-white">
+    <section className="mx-5 md:mx-10 overflow-hidden min-h-screen text-white">
       <MainHeading title="WHAT I HAVE DONE SO FAR" subTitle="Work Experience" />
 
       <div className="mt-10 work-wrapper">
         {experiences.map((experience) => (
           <div
             key={experience.company_name}
-            className="flex justify-between gap-5 mb-14 card"
+            className="flex flex-col md:flex-row justify-between gap-5 mb-14 card"
           >
             <div className="flex-[0.5] flex flex-col items-center justify-center gap-3">
               <div
@@ -53,10 +53,10 @@ const WorkPage = () => {
               <h3 className="slide-in">{experience.company_name}</h3>
             </div>
             <div className="flex-[1.5]">
-              <p className="text-2xl text-gray-300 font-bold slide-in">
+              <p className="text-2xl text-gray-300 font-bold slide-in text-center md:text-left">
                 {experience.title}
               </p>
-              <p className="text-slate-500 text-sm slide-in">
+              <p className="text-slate-500 text-sm slide-in text-center md:text-left">
                 {experience.date}
               </p>
               <ul className="mt-4 ml-5 text-slate-300 slide-in scrollTrigger">

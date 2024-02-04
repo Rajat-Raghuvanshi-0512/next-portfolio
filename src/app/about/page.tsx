@@ -6,10 +6,10 @@ import React from 'react';
 
 const page = () => {
   return (
-    <section className="mx-10 overflow-hidden min-h-screen">
+    <section className="mx-5 md:mx-10 overflow-hidden min-h-screen">
       <MainHeading title="introduction" subTitle="detail" />
       <AnimateOnLoad fromRight duration={2} offset={1.5}>
-        <p className="text-white font-mono text-justify mt-5 slide-in opacity-0 md:text-sm lg:text-base 2xl:text-xl">
+        <p className="text-white font-mono text-justify mt-5 slide-in opacity-0 text-sm md:text-sm lg:text-base 2xl:text-xl">
           Experienced web developer skilled in crafting, enhancing, and
           sustaining high-performing, user-centric websites. Proficient in
           modern technologies and adheres to best design practices. A
@@ -18,13 +18,13 @@ const page = () => {
         </p>
       </AnimateOnLoad>
       <AnimateOnLoad fromRight duration={2.3} offset={2}>
-        <p className="text-white font-mono text-justify mt-5 slide-in opacity-0 md:text-sm lg:text-base 2xl:text-xl">
+        <p className="text-white font-mono text-justify mt-5 slide-in opacity-0 text-sm md:text-sm lg:text-base 2xl:text-xl">
           I have an experience of 4 years in software development with knowledge
           of different domains like web development, App development, UI/UX
           designing and Blockchain development.
         </p>
       </AnimateOnLoad>
-      <div className="flex flex-wrap gap-10 2xl:gap-16 mt-10 justify-center">
+      <div className="flex flex-col items-center md:flex-row md:flex-wrap gap-10 2xl:gap-16 mt-10 justify-center">
         {domains.map((domain, i) => (
           <AnimateOnLoad
             key={domain.name}

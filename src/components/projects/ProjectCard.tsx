@@ -12,7 +12,7 @@ const ProjectCard = ({
 }: ProjectCardType) => {
   return (
     <Tilt className="bg-[#151030] p-5 rounded-2xl sm:w-[200px] lg:w-[270px] w-full">
-      <div className="relative w-full h-[100px] lg:h-[130px] overflow-clip rounded-lg flex justify-center items-center">
+      <div className="relative w-full h-[140px] lg:h-[130px] overflow-clip rounded-lg flex justify-center items-center">
         <video
           autoPlay
           loop
@@ -20,7 +20,7 @@ const ProjectCard = ({
           playsInline
           src={image}
           typeof="video/mp4"
-          className="w-full h-[100px] lg:h-[130px] object-cover bg-gray-200 rounded"
+          className="w-full h-[140px] lg:h-[130px] object-cover bg-gray-200 rounded"
         />
 
         <div className="absolute hover:bg-[rgba(0,0,0,0.4)] w-full h-full top-0 left-0 flex items-center justify-center gap-5 duration-300 opacity-0 hover:opacity-100">

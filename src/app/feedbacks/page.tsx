@@ -5,7 +5,7 @@ import React from 'react';
 
 const page = () => {
   return (
-    <section className="px-10 mb-10 overflow-hidden min-h-screen text-white">
+    <section className="mx-5 md:px-10 mb-10 overflow-hidden min-h-screen text-white">
       <MainHeading title="What others say " subTitle="Testimonials" />
       <div className="flex flex-col gap-5 lg:gap-20 mt-10">
         {testimonials.map((testimonials, idx) => (

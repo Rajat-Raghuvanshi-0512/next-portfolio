@@ -76,13 +76,13 @@ const App = () => {
   }, [text, tick, delay]);
 
   return (
-    <section className="mx-10 overflow-hidden" ref={ref}>
+    <section className="px-5 md:mx-10 overflow-hidden" ref={ref}>
       <MainHeading title="introduction" subTitle="overview" />
-      <div className={` grid grid-cols-5 gap-5 md:gap-10 lg:gap-12`}>
-        <div className="floating-container w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[300px] xl:h-[300px] overflow-clip ml-10 mt-14 col-span-2">
+      <div className={`grid md:grid-cols-5 gap-5 md:gap-10 lg:gap-12`}>
+        <div className="floating-container w-[180px] h-[180px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[300px] xl:h-[300px] overflow-clip m-4 md:ml-10 lg:mt-14 col-span-2">
           <Image
             src={MyImg}
-            className="object-cover  object-top"
+            className="object-cover object-top"
             alt="me"
             width={300}
             height={300}
@@ -93,14 +93,14 @@ const App = () => {
             className={`text-[clamp(1rem,7vmin,6rem)] lg:leading-[80px] text-white opacity-0 fadeIn ${poppinsSemiBold.className}`}
           >
             <span className="block sm:inline">
-              👋Hi, I&apos;m <span className="text-[#01C1CF]">Rajat</span>
+              👋&nbsp;Hi, I&apos;m <span className="text-[#01C1CF]">Rajat</span>
             </span>
             <a
               onClick={() => window.open('resume.pdf')}
-              className="ml-3 text-[14px] sm:text-[10px] bg-opacity-90 px-2 py-1 rounded-3xl font-semibold -mt-10 md:mt-8 bg-[#01C1CF] hover:bg-[#02959f] duration-300 hover:scale-90 cursor-pointer "
+              className="ml-3 text-[12px] sm:text-[10px] bg-opacity-90 px-2 py-1 rounded-3xl font-semibold -mt-10 md:mt-8 bg-[#01C1CF] hover:bg-[#02959f] duration-300 hover:scale-90 cursor-pointer "
               title="View Resume"
             >
-              📄Resume
+              📄&nbsp;Resume
             </a>
           </h1>
           <p
@@ -114,7 +114,7 @@ const App = () => {
               </span>
             </span>
           </p>
-          <div className="info flex gap-3 items-end justify-end m-10 fadeIn opacity-0">
+          <div className="info flex gap-3 items-end justify-end m-5 md:m-8 lg:m-10 fadeIn opacity-0">
             <Link
               href="https://github.com/Rajat-Raghuvanshi-0512"
               target="_blank"

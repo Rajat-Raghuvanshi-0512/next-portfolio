@@ -7,7 +7,7 @@ import AnimateOnScroll from '@/components/AnimanteOnScroll';
 
 const page = () => {
   return (
-    <section className="mx-10 overflow-hidden min-h-screen text-white">
+    <section className="mx-5 md:mx-10 overflow-hidden min-h-screen text-white">
       <MainHeading title="My work" subTitle="Projects" />
       <div className="w-full flex">
         <AnimateOnLoad

@@ -26,7 +26,7 @@ const Technologies = () => {
   return (
     <div className="tech text-white font-bold" ref={ref}>
       <h4 className="fadeIn opacity-0">Technologies</h4>
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5 my-10">
+      <div className="grid grid-cols-6 md:grid-cols-4 lg:grid-cols-6 gap-5 my-3 pb-10 md:pb-0 md:my-7 lg:my-10">
         {logos.map((logo) => (
           <Image
             key={logo.id}
